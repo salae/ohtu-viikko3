@@ -1,6 +1,2 @@
-language: java
-script: 
-	-mvn integration-test
-	-mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
-after_success:
-  - mvn clean cobertura:cobertura coveralls:report
+﻿language: java
+script: "mvn integration-test" && mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
