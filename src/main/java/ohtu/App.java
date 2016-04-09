@@ -36,38 +36,42 @@ public class App {
             if (command.isEmpty()) {
                 break;
             }
-
-            if (command.equals("new")) {
-                String[] usernameAndPasword = ask();
-                if (auth.createUser(usernameAndPasword[0], usernameAndPasword[1])) {
-                    io.print("new user registered");
-                } else {
-                    io.print("new user not registered");
-                }
-
-            } else if (command.equals("login")) {
-                String[] usernameAndPasword = ask();
-                if (auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
-                    io.print("logged in");
-                } else {
-                    io.print("wrong username or password");
-                }
-            }
-
+            handleCommand(command);
         }
+    }
+    
+    private void handleCommand(String command){
+        if (command.equals("new")) {
+            handleCommandNew();
+        } else if (command.equals("login")) {
+            handleCommandLogin();
+        }      
+    }
+    
+    private void handleCommandNew(){
+        String[] usernameAndPasword = ask();
+        if (auth.createUser(usernameAndPasword[0], usernameAndPasword[1])) {
+            io.print("new user registered");
+        } else {
+            io.print("new user not registered");
+        }       
+    }
+    
+    private void handleCommandLogin(){
+        String[] usernameAndPasword = ask();
+        if (auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
+            io.print("logged in");
+        } else {
+            io.print("wrong username or password");
+        }       
     }
 
     public static void main(String[] args) {
         ApplicationContext ctx = new FileSystemXmlApplicationContext("src/main/resources/spring-context.xml");
 
         App application = ctx.getBean(App.class);
-        application.run();       
-        
-        
-//        UserDao dao = new InMemoryUserDao();
-//        IO io = new ConsoleIO();
-//        AuthenticationService auth = new AuthenticationService(dao);
-//        new App(io, auth).run();
+        application.run();         
+
     }
     
     // testejä debugatessa saattaa olla hyödyllistä testata ohjelman ajamista
