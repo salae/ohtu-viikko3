@@ -59,7 +59,7 @@ public class App {
     
     private void handleCommandLogin(){
         String[] usernameAndPasword = ask();
-            if (auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
+        if (auth.logIn(usernameAndPasword[0], usernameAndPasword[1])) {
             io.print("logged in");
         } else {
             io.print("wrong username or password");
