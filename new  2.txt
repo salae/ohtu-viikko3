@@ -16,7 +16,13 @@ script:
 	- mvn integration-test 
 	
 ------------------------
-	
+before_script:
+	- mvn checkstyle:check
+
+script: 
+# - mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
+	- mvn integration-test 
+------------------------	
 
 
 
