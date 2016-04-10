@@ -1,6 +1,5 @@
 ﻿language: java
 
-install:
-- mvn test checkstyle:check
 script: 
+- mvn verify checkstyle:check
 - mvn integration-test 

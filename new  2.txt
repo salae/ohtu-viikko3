@@ -30,7 +30,14 @@ script:
 - mvn integration-test 
 
 ------------------------
+language: java
 
+install:
+- mvn test checkstyle:check
+script: 
+- mvn integration-test 
+
+------------------------------
 
 Toimii:
 language: java
