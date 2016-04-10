@@ -19,7 +19,7 @@ scenario "user can login with correct password", {
     }
 
     then 'user will be logged in to system', {
-       io.getPrints().shouldNotHave("logged in")
+       io.getPrints().shouldHave("logged in")
     }
 }
 
