@@ -1,4 +1,5 @@
 ﻿language: java
-install: mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
+
 script: 
+- mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
 - mvn integration-test 
