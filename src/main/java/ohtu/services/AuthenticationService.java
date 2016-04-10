@@ -7,12 +7,12 @@ import ohtu.data_access.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class AuthenticationService {
 
     private UserDao userDao;
 
-    @Autowired
+//    @Autowired
     public AuthenticationService(UserDao userDao) {
         this.userDao = userDao;
     }
