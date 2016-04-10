@@ -1,6 +1,5 @@
 ﻿language: java
 
 script: 
-	- mvn checkstyle:check
-# - mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
-	- mvn integration-test 
+- mvn checkstyle:check
+- mvn integration-test 
