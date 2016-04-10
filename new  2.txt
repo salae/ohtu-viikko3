@@ -23,7 +23,13 @@ script:
 # - mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
 	- mvn integration-test 
 ------------------------	
+language: java
 
+script: 
+- mvn test checkstyle:check
+- mvn integration-test 
+
+------------------------
 
 
 Toimii:
