@@ -1,7 +1,18 @@
 ﻿Ei toimi
-
+--------------------
 language: java
 
 script: 
 - mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
+- mvn integration-test 
+
+
+------------------------
+
+
+Toimii:
+language: java
+
+script: 
+# - mvn checkstyle:check -Dcheckstyle.config.location=my_checks.xml
 - mvn integration-test 
