@@ -1,0 +1,5 @@
+Scrumiin kuuluviin retrospektiiveihin on olemassa erilaisia tekniikoita, joista tässä tietoja kahdesta. Monia muitakin on olemassa.
+
+”Start, Stop, Continue, More of, Less of Wheel” on melko nopea ja yksinkertainen tekniikka. Piirretään ympyrä ja siihen viisi nimessä mainittua sektoria. Sitten mietitään yksi kerrallaan, mitä tiimin pitäisi alkaa tehdä, lopettaa tekemästä ja jatkaa. Mitä pitäisi tehdä enemmän ja mitä vähemmän? Jokainen saa kommentoida tietyn ajan ja tulokset kirjoitetaan ympyrään. Näin on tarkoitus kehittää ryhmän työskentelyä tulevaisuudessa.
+
+“Glad, Sad, Mad” -tekniikassa alussa jokainen tiimin jäsen kirjoittaa itsekseen lapuille huomioita edellisestä sprintistä: hyviä ja huonoja, mutta yritetään välttää keskittymästä vain yksittäisten henkilöiden tekemisiin. Jokainen sitten esittelee korttinsa ja pistää ne taululle, joka on jaettu 3 kategoriaan: glad, sad ja mad sopivaksi katsomalleen paikalle. Sitten äänestetään, mistä aiheista halutaan keskustella lisää. Ja keskustellaan ”voittajista” alkaen siitä, mikä on saanut eniten ääniä. Mieluiten yritetään miettiä asioita erityisesti seuraavan sprintin kannalta.
